@@ -12,6 +12,7 @@ import sys
 import os
 import random
 from matplotlib.backends import qt_compat
+import matplotlib.pyplot as plt
 use_pyside = qt_compat.QT_API == qt_compat.QT_API_PYSIDE
 if use_pyside:
     from PySide import QtGui, QtCore
@@ -31,7 +32,15 @@ class MyMplCanvas(FigureCanvas):
 
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         fig = Figure(figsize=(width, height), dpi=dpi)
+
+        fig.set_facecolor('gray')
+        # fig.set_alpha(0.99)
+        # plt.rcParams['axes.facecolor'] = 'gray'
+
         self.axes = fig.add_subplot(111)
+
+        self.axes.patch.set_facecolor("k")
+        self.axes.patch.set_alpha(0.75)
 
         self.compute_initial_figure()
 
@@ -129,6 +138,12 @@ qApp = QtGui.QApplication(sys.argv)
 
 aw = ApplicationWindow()
 aw.setWindowTitle("%s" % progname)
+
+from aqua.qsshelper import QSSHelper
+# loads and sets the Qt stylesheet
+qss = QSSHelper.open_qss(os.path.join('../aqua', 'aqua.qss'))
+aw.setStyleSheet(qss)
+
 aw.show()
 sys.exit(qApp.exec_())
 #qApp.exec_()
