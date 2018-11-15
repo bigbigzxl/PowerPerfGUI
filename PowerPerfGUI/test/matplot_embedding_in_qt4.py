@@ -23,6 +23,9 @@ from numpy import arange, sin, pi
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
+sys.path.append('../')
+from aqua.qsshelper import QSSHelper
+
 progname = os.path.basename(sys.argv[0])
 progversion = "0.1"
 
@@ -39,8 +42,12 @@ class MyMplCanvas(FigureCanvas):
 
         self.axes = fig.add_subplot(111)
 
-        self.axes.patch.set_facecolor("k")
-        self.axes.patch.set_alpha(0.75)
+        # self.axes.patch.set_facecolor("k")
+        # self.axes.patch.set_alpha(0.75)
+
+
+        # self.axes.set_axis_bgcolor('red')
+        # self.axes.set_axis_bgcolor((0.3, 0, 0))
 
         self.compute_initial_figure()
 
@@ -139,7 +146,7 @@ qApp = QtGui.QApplication(sys.argv)
 aw = ApplicationWindow()
 aw.setWindowTitle("%s" % progname)
 
-from aqua.qsshelper import QSSHelper
+
 # loads and sets the Qt stylesheet
 qss = QSSHelper.open_qss(os.path.join('../aqua', 'aqua.qss'))
 aw.setStyleSheet(qss)
