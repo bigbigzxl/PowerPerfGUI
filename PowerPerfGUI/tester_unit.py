@@ -8,6 +8,7 @@ import time
 
 fig, ax = plt.subplots()
 line, = ax.plot(np.random.randn(100))
+line1, = ax.plot(np.random.randn(100))
 plt.show(block=False)
 
 tstart = time.time()
@@ -18,9 +19,9 @@ while time.time()-tstart < 5:
     i += 1
     value.append(i)
     # 这种方式不会自动调节显示范围的
-    line.set_xdata(value)
+    # line.set_xdata(value)
     # 如果想只设置y数据的话，除非你的x范围是固定的；
-    line.set_ydata(value)
+    # line.set_ydata(value)
 
     # 77 FPS
     # fig.canvas.draw() #只要用fig.canvas.update()，就必须有这个在ax.draw的前面
@@ -29,7 +30,8 @@ while time.time()-tstart < 5:
     # fig.canvas.update()
     # fig.canvas.flush_events()
 
-
+    # plt.ylim(0, np.max(value) * 1.02)
+    # plt.xlim(0, np.max(value) + 5)
     # 95 FPS
     fig.canvas.draw()
     fig.canvas.flush_events()
@@ -38,7 +40,12 @@ while time.time()-tstart < 5:
 print(num_plots/5)
 
 
-
+DISPATCH_DICTS = {}
+DISPATCH_DICTS["zxl"] = {"Line_Y":[]}
+if DISPATCH_DICTS.get("zxl"):
+    print "1111"
+# DISPATCH_DICTS["zxl"]["Line"] = None
+print DISPATCH_DICTS
 
 
 

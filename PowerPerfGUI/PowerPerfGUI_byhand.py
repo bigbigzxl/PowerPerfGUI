@@ -1,4 +1,26 @@
 # coding=utf-8
+from __future__ import unicode_literals
+import sys
+import os
+import random
+from matplotlib.backends import qt_compat
+import matplotlib.pyplot as plt
+use_pyside = qt_compat.QT_API == qt_compat.QT_API_PYSIDE
+if use_pyside:
+    from PySide import QtGui, QtCore
+else:
+    from PyQt4 import QtGui, QtCore
+
+from numpy import arange, sin, pi
+from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+
+sys.path.append('../')
+from aqua.qsshelper import QSSHelper
+
+progname = os.path.basename(sys.argv[0])
+progversion = "0.1"
+
 import os
 import sys  # provides interaction with the Python interpreter
 
@@ -12,6 +34,59 @@ matplotlib.use('Qt4Agg')
 import matplotlib.pyplot as plt
 import time
 
+
+class MyMplCanvas(FigureCanvas):
+    """Ultimately, this is a QWidget (as well as a FigureCanvasAgg, etc.)."""
+
+    def __init__(self, parent=None, width=5, height=4, dpi=100):
+        fig = Figure(figsize=(width, height), dpi=dpi)
+        plt.title("zxl")
+        fig.set_facecolor('gray')
+        # fig.set_alpha(0.99)
+        # plt.rcParams['axes.facecolor'] = 'gray'
+
+        self.axes = fig.add_subplot(111)
+
+        # self.axes.patch.set_facecolor("k")
+        # self.axes.patch.set_alpha(0.75)
+
+
+        # self.axes.set_axis_bgcolor('red')
+        # self.axes.set_axis_bgcolor((0.3, 0, 0))
+
+        self.compute_initial_figure()
+
+        FigureCanvas.__init__(self, fig)
+        self.setParent(parent)
+
+        FigureCanvas.setSizePolicy(self,
+                                   QtGui.QSizePolicy.Expanding,
+                                   QtGui.QSizePolicy.Expanding)
+        FigureCanvas.updateGeometry(self)
+
+    def compute_initial_figure(self):
+        pass
+
+class MyDynamicMplCanvas(MyMplCanvas):
+    """A canvas that updates itself every second with a new plot."""
+
+    def __init__(self, *args, **kwargs):
+        MyMplCanvas.__init__(self, *args, **kwargs)
+        timer = QtCore.QTimer(self)
+        timer.timeout.connect(self.update_figure)
+        timer.start(100)
+
+    def compute_initial_figure(self):
+        self.axes.plot([0, 1, 2, 3], [1, 2, 0, 4], 'r')
+        self.axes.set_title("good")
+
+    def update_figure(self):
+        # Build a list of 4 random integers between 0 and 10 (both inclusive)
+        l = [random.randint(0, 10) for i in range(4)]
+        self.axes.clear()
+        self.axes.plot([0, 1, 2, 3], l, 'r')
+        self.axes.set_title("good")
+        self.draw()
 
 class Window(QtGui.QMainWindow):
     def __init__(self, parent=None):
@@ -31,6 +106,7 @@ class Window(QtGui.QMainWindow):
         self.checkbox6 = QtGui.QCheckBox('L1D_CACHE')
         self.checkbox7 = QtGui.QCheckBox('L1D_CACHE')
         self.checkbox8 = QtGui.QCheckBox('L1D_CACHE')
+
 
         groupbox_checkable_layout = QtGui.QVBoxLayout()
         groupbox_checkable_layout.addWidget(self.checkbox1)
@@ -107,10 +183,6 @@ class Window(QtGui.QMainWindow):
 
         fig.canvas.draw()
         fig.canvas.flush_events()
-
-
-
-
 
 def main():
     global DISPATCH_DICTS

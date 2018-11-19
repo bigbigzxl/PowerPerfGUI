@@ -42,20 +42,20 @@ def main():
 
 
 if __name__ == '__main__':
-    # main()
+    main()
     # a = ["zxl", "oas", "fadacai", "fadacai"]
     # a.remove("fadacai")
     # print a
-    set_X = set()
-    set_X.add("zxl")
-    set_X.add("money")
-    set_X.add("zxl")
-    for item in set_X:
-        print item
-
-    print len(set_X), set_X
-    if "zxl" in set_X:
-        print "ok"
-
-    set_X.discard("zxl")# remove: if the data is not existed, then keyError coming up.
-    print set_X
+    # set_X = set()
+    # set_X.add("zxl")
+    # set_X.add("money")
+    # set_X.add("zxl")
+    # for item in set_X:
+    #     print item
+    #
+    # print len(set_X), set_X
+    # if "zxl" in set_X:
+    #     print "ok"
+    #
+    # set_X.discard("zxl")# remove: if the data is not existed, then keyError coming up.
+    # print set_X
