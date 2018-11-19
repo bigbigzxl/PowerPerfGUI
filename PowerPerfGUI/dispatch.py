@@ -96,6 +96,7 @@ class dispatch_thread (threading.Thread):
 
     def dispatch_2_dict(self, line):
         event_name, event_value = line.split("=")
+        # 假如数据不是标准的RAW Event的话， 返回。
         if event_name not in self.EventName:
             return
         else:
@@ -104,10 +105,12 @@ class dispatch_thread (threading.Thread):
                 if len(self.dispatched_dict[event_name]["Line_Y"]) >= self.max_line_length:
                     # 实现队列的功能，去掉最老的数据，然后补新的，为了方式line太长从而显示卡顿挂掉；
                     self.dispatched_dict[event_name]["Line_Y"].pop(0)
-            else:# 没有字典还
-                self.dispatched_dict[event_name] = {"Line_Y": []}
+            else:
+                # 没有字典还，那么我就的给你创造一个身体，为了升级你的“身体”，今后可以选择把下面的做成模板，统一升级，暂时小工程还用不到。
+                self.dispatched_dict[event_name] = {"Line_Y": [], "NEW_DATA": False, "Line": None}
 
             self.dispatched_dict[event_name]["Line_Y"].append(float(event_value))
+            self.dispatched_dict[event_name]["NEW_DATA"] = True
 
     def SAVEdatas(self, line):
         self.folder = os.path.join(os.getcwd(), "TEST_VALUES")

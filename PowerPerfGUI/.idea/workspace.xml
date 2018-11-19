@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d279ab93-5448-446e-9400-01d8239b03ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adb_perf_show.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dict_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/twin_axise_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PowerPerfGUI_byhand.py" beforeDir="false" afterPath="$PROJECT_DIR$/PowerPerfGUI_byhand.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/matplot_embedding_in_qt4.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/matplot_embedding_in_qt4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dict_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/dict_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,29 +22,29 @@
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="19" />
+          <entry key="py" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="19" />
+          <entry key="Python" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3185" />
+          <entry key="py" value="4811" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3185" />
+          <entry key="Python" value="4811" />
         </counts>
       </usages-collector>
     </session>
@@ -57,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/matplot_embedding_in_qt4_wtoolbar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="66">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -69,36 +66,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/matplot_embedding_in_qt4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2178">
-              <caret line="114" column="19" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="19" />
+            <state relative-caret-position="-179">
+              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
               <folding>
                 <element signature="e#343#382#0" expanded="true" />
                 <element signature="e#897#1708#0" />
-                <element signature="e#1963#2728#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PowerPerfGUI_byhand.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#2#41#0" expanded="true" />
-                <element signature="e#1818#1822#0" />
-                <marker date="1542552258764" expanded="true" signature="2591:2600" ph="..." />
+                <element signature="e#2319#2366#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://C:/Python27/Lib/site-packages/matplotlib/pyplot.py">
+        <entry file="file://$PROJECT_DIR$/PowerPerfGUI_byhand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="532" selection-start-line="532" selection-end-line="532" />
+            <state relative-caret-position="-443">
+              <caret line="105" column="87" selection-start-line="105" selection-start-column="87" selection-end-line="105" selection-end-column="87" />
+              <folding>
+                <element signature="e#16#55#0" expanded="true" />
+                <element signature="e#1467#1471#0" />
+                <element signature="e#2083#2104#0" />
+                <marker date="1542648508207" expanded="true" signature="868:1344" ph="..." />
+                <marker date="1542648508207" expanded="true" signature="2891:3577" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dispatch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="745">
+              <caret line="158" column="21" lean-forward="true" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/twin_axise_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="618">
+              <caret line="95" column="88" lean-forward="true" selection-start-line="95" selection-start-column="88" selection-end-line="95" selection-end-column="88" />
+              <folding>
+                <element signature="e#783#793#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adb_perf_show.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="314" column="48" lean-forward="true" selection-start-line="314" selection-start-column="48" selection-end-line="314" selection-end-column="48" />
+            <state relative-caret-position="282">
+              <caret line="319" column="24" lean-forward="true" selection-start-line="319" selection-start-column="24" selection-end-line="319" selection-end-column="24" />
               <folding>
                 <element signature="e#15#27#0" expanded="true" />
                 <element signature="e#358#3746#0" />
@@ -165,10 +176,8 @@
                 <element signature="e#9931#10048#0" />
                 <element signature="e#10149#10369#0" />
                 <element signature="e#10295#10369#0" />
-                <element signature="e#11914#13401#0" />
                 <element signature="e#11914#11934#0" />
                 <element signature="e#12444#12499#0" />
-                <element signature="e#13451#13720#0" />
                 <element signature="e#13503#13643#0" />
                 <element signature="e#13828#13888#0" />
                 <element signature="e#13931#16415#0" />
@@ -230,6 +239,9 @@
       <find>put</find>
       <find>fm</find>
       <find>Aq</find>
+      <find>line</find>
+      <find>legend</find>
+      <find>canvas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -240,18 +252,19 @@
       <list>
         <option value="$PROJECT_DIR$/test/matplot_embedding_in_qt4.py" />
         <option value="$PROJECT_DIR$/filter.py" />
+        <option value="$PROJECT_DIR$/adb_perf_show.py" />
+        <option value="$PROJECT_DIR$/back.py" />
         <option value="$PROJECT_DIR$/test/dict_test.py" />
         <option value="$PROJECT_DIR$/dispatch.py" />
-        <option value="$PROJECT_DIR$/adb_perf_show.py" />
+        <option value="$PROJECT_DIR$/test/twin_axise_test.py" />
         <option value="$PROJECT_DIR$/PowerPerfGUI_byhand.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="468" />
+    <option name="width" value="2099" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -270,7 +283,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -282,6 +297,11 @@
             <path>
               <item name="PowerPerfGUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="PowerPerfGUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PowerPerfGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PowerPerfGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="aqua" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PowerPerfGUI" type="b2602c69:ProjectViewProjectNode" />
@@ -311,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PowerPerfGUI_byhand">
+  <component name="RunManager" selected="Python.matplot_embedding_in_qt4">
     <configuration name="PowerPerfGUI_byhand" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PowerPerfGUI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -375,7 +395,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dispatch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="matplot_embedding_in_qt4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PowerPerfGUI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,11 +403,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dispatch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/matplot_embedding_in_qt4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -396,7 +416,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="twin_axise_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PowerPerfGUI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,11 +424,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/twin_axise_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -418,19 +438,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.filter" />
       <item itemvalue="Python.adb_perf_show" />
-      <item itemvalue="Python.dispatch" />
-      <item itemvalue="Python.dict_test" />
       <item itemvalue="Python.PowerPerfGUI_byhand" />
+      <item itemvalue="Python.matplot_embedding_in_qt4" />
+      <item itemvalue="Python.twin_axise_test" />
+      <item itemvalue="Python.dict_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.matplot_embedding_in_qt4" />
         <item itemvalue="Python.PowerPerfGUI_byhand" />
         <item itemvalue="Python.adb_perf_show" />
-        <item itemvalue="Python.dispatch" />
+        <item itemvalue="Python.twin_axise_test" />
         <item itemvalue="Python.dict_test" />
-        <item itemvalue="Python.filter" />
       </list>
     </recent_temporary>
   </component>
@@ -448,14 +468,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
+    <frame x="468" y="0" width="2099" height="1407" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24507487" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2508491" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3524264" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18509616" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39936358" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,33 +497,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PowerPerfGUI_byhand.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PowerPerfGUI_byhand.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="3" />
+          <url>file://C:/Python27/Lib/site-packages/matplotlib/backend_bases.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aqua/qsshelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="991" column="4" selection-start-line="991" selection-start-column="4" selection-end-line="991" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/matplotlib/patches.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -517,24 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/dict_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-          <folding>
-            <element signature="e#15#27#0" expanded="true" />
-            <marker date="1542549930315" expanded="true" signature="4093:4712" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/matplotlib/backends/backend_qt5agg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -542,21 +526,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/matplot_embedding_in_qt4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
-          <caret line="114" column="19" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="19" />
-          <folding>
-            <element signature="e#343#382#0" expanded="true" />
-            <element signature="e#897#1708#0" />
-            <element signature="e#1963#2728#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/matplot_embedding_in_qt4_wtoolbar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="66">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -564,23 +536,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/_pylab_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="1432" selection-start-line="1432" selection-end-line="1432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/backend_bases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="532" selection-start-line="532" selection-end-line="532" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="14" />
+          <folding>
+            <element signature="e#16#55#0" expanded="true" />
+            <element signature="e#4455#7464#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/filter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="14" />
-          <folding>
-            <element signature="e#15#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="712">
+          <caret line="95" selection-start-line="95" selection-end-line="96" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dict_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/matplotlib/font_manager.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-762174762/PyQt4/QtGui/QCheckBox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="211" column="8" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/twin_axise_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="95" column="88" lean-forward="true" selection-start-line="95" selection-start-column="88" selection-end-line="95" selection-end-column="88" />
+          <folding>
+            <element signature="e#783#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/adb_perf_show.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="314" column="48" lean-forward="true" selection-start-line="314" selection-start-column="48" selection-end-line="314" selection-end-column="48" />
+        <state relative-caret-position="282">
+          <caret line="319" column="24" lean-forward="true" selection-start-line="319" selection-start-column="24" selection-end-line="319" selection-end-column="24" />
           <folding>
             <element signature="e#15#27#0" expanded="true" />
             <element signature="e#358#3746#0" />
@@ -638,10 +670,8 @@
             <element signature="e#9931#10048#0" />
             <element signature="e#10149#10369#0" />
             <element signature="e#10295#10369#0" />
-            <element signature="e#11914#13401#0" />
             <element signature="e#11914#11934#0" />
             <element signature="e#12444#12499#0" />
-            <element signature="e#13451#13720#0" />
             <element signature="e#13503#13643#0" />
             <element signature="e#13828#13888#0" />
             <element signature="e#13931#16415#0" />
@@ -678,22 +708,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PowerPerfGUI_byhand.py">
+    <entry file="file://$PROJECT_DIR$/dispatch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="745">
+          <caret line="158" column="21" lean-forward="true" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/matplot_embedding_in_qt4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
           <folding>
-            <element signature="e#2#41#0" expanded="true" />
-            <element signature="e#1818#1822#0" />
-            <marker date="1542552258764" expanded="true" signature="2591:2600" ph="..." />
+            <element signature="e#343#382#0" expanded="true" />
+            <element signature="e#897#1708#0" />
+            <element signature="e#2319#2366#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/pyplot.py">
+    <entry file="file://$PROJECT_DIR$/PowerPerfGUI_byQTdesiner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="532" selection-start-line="532" selection-end-line="532" />
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PowerPerfMainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aqua/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aqua/qsshelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PowerPerfGUI_byhand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-443">
+          <caret line="105" column="87" selection-start-line="105" selection-start-column="87" selection-end-line="105" selection-end-column="87" />
+          <folding>
+            <element signature="e#16#55#0" expanded="true" />
+            <element signature="e#1467#1471#0" />
+            <element signature="e#2083#2104#0" />
+            <marker date="1542648508207" expanded="true" signature="868:1344" ph="..." />
+            <marker date="1542648508207" expanded="true" signature="2891:3577" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

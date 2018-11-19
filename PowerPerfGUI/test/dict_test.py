@@ -18,6 +18,8 @@ name = "INSTRUCTIONS"
 event_dicts["zxl"] = {"Line_X":[1,2,3],
                       "Line_Y":[4,5,6],
                       }
+if len(event_dicts["zxl"]["oas"]) > 0:
+    print 1111
 # print event_dicts.get("zxl0")
 # print event_dicts
 a = ["zxl2", "oas", "zxl1"]
