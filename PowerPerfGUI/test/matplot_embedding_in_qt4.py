@@ -72,16 +72,21 @@ class MyDynamicMplCanvas(MyMplCanvas):
         MyMplCanvas.__init__(self, *args, **kwargs)
         timer = QtCore.QTimer(self)
         timer.timeout.connect(self.update_figure)
-        timer.start(1000)
+        timer.start(30)
+        self.y = []
+        self.x = []
 
     def compute_initial_figure(self):
         self.axes.plot([0, 1, 2, 3], [1, 2, 0, 4], 'r')
 
     def update_figure(self):
         # Build a list of 4 random integers between 0 and 10 (both inclusive)
-        l = [random.randint(0, 10) for i in range(4)]
+        self.y.append(random.randint(0, 10))
+        self.x.append(len(self.y))
         self.axes.cla()
-        self.axes.plot([0, 1, 2, 3], l, 'r')
+        self.axes.patch.set_facecolor("k")
+        self.axes.patch.set_alpha(0.75)
+        self.axes.plot(self.x, self.y, 'r--o')
         self.draw()
 
 
@@ -105,10 +110,11 @@ class ApplicationWindow(QtGui.QMainWindow):
         self.main_widget = QtGui.QWidget(self)
 
         l = QtGui.QVBoxLayout(self.main_widget)
-        sc = MyStaticMplCanvas(self.main_widget, width=5, height=4, dpi=100)
-        dc = MyDynamicMplCanvas(self.main_widget, width=5, height=4, dpi=100)
+        sc = MyStaticMplCanvas(self.main_widget, width=300, height=300, dpi=100)
+        dc = MyDynamicMplCanvas(self.main_widget, width=300, height=300, dpi=100)
         l.addWidget(sc)
         l.addWidget(dc)
+
 
         self.main_widget.setFocus()
         self.setCentralWidget(self.main_widget)
