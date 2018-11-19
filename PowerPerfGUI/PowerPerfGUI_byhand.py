@@ -1,3 +1,4 @@
+# coding=utf-8
 import os
 import sys  # provides interaction with the Python interpreter
 
@@ -5,10 +6,20 @@ from PyQt4 import QtGui  # provides the graphic elements
 from PyQt4.QtCore import Qt  # provides Qt identifiers
 
 from aqua.qsshelper import QSSHelper
+import numpy as np
+import matplotlib
+matplotlib.use('Qt4Agg')
+import matplotlib.pyplot as plt
+import time
 
 
 class Window(QtGui.QMainWindow):
     def __init__(self, parent=None):
+        self.current_events = set()
+
+
+
+
         QtGui.QMainWindow.__init__(self, parent)
 
         # checkable groupbox
@@ -73,8 +84,38 @@ class Window(QtGui.QMainWindow):
         self.setCentralWidget(central)
 
 
+        ############################################
+
+
+    def dynamic_drawlines(self):
+        # aim: one func one thing.
+        for event_name in self.current_events:
+            if DISPATCH_DICTS.get(event_name) and len(DISPATCH_DICTS[event_name]["Line_Y"]) > 0:
+                pass
+
+
+    def plot_single_Datas(self, fig, axe, line, x, y):
+        line.set_xdata(x)
+        line.set_ydata(y)
+
+        max_x = np.max(x)
+        max_y = np.max(y)
+        min_y = np.min(y)
+        mean_y = np.mean(y)
+        plt.ylim(0, max_y * 1.02)
+        plt.xlim(0, max_x + 5)
+
+        fig.canvas.draw()
+        fig.canvas.flush_events()
+
+
+
+
 
 def main():
+    global DISPATCH_DICTS
+    DISPATCH_DICTS = {}
+
     # creates the application and takes arguments from the command line
     application = QtGui.QApplication(sys.argv)
 

@@ -1,5 +1,52 @@
 # coding=utf-8
 
+import numpy as np
+import matplotlib
+matplotlib.use('Qt4Agg')
+import matplotlib.pyplot as plt
+import time
+
+fig, ax = plt.subplots()
+line, = ax.plot(np.random.randn(100))
+plt.show(block=False)
+
+tstart = time.time()
+num_plots = 0
+value = []
+i = 1
+while time.time()-tstart < 5:
+    i += 1
+    value.append(i)
+    # 这种方式不会自动调节显示范围的
+    line.set_xdata(value)
+    # 如果想只设置y数据的话，除非你的x范围是固定的；
+    line.set_ydata(value)
+
+    # 77 FPS
+    # fig.canvas.draw() #只要用fig.canvas.update()，就必须有这个在ax.draw的前面
+    # ax.draw_artist(ax.patch)
+    # ax.draw_artist(line)
+    # fig.canvas.update()
+    # fig.canvas.flush_events()
+
+
+    # 95 FPS
+    fig.canvas.draw()
+    fig.canvas.flush_events()
+
+    num_plots += 1
+print(num_plots/5)
+
+
+
+
+
+
+
+
+
+
+
 # # s = ["1", "2", "3"]
 # # print type(s)
 #
@@ -242,21 +289,21 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.arange(0., np.e, 0.01)
-y1 = np.exp(x)
-y2 = np.log(x)
-
-fig = plt.figure()
-
-ax1 = fig.add_subplot(111)
-ax1.plot(x, y1)
-ax1.set_ylabel('Y values for exp(-x)')
-ax1.set_title("Double Y axis")
-
-ax2 = ax1.twinx()  # this is the important function
-ax2.plot(x, y2, 'r')
-ax2.set_xlim([0, np.e])
-ax2.set_ylabel('Y values for ln(x)')
-ax2.set_xlabel('Same X for both exp(-x) and ln(x)')
-
-plt.show()
+# x = np.arange(0., np.e, 0.01)
+# y1 = np.exp(x)
+# y2 = np.log(x)
+#
+# fig = plt.figure()
+#
+# ax1 = fig.add_subplot(111)
+# ax1.plot(x, y1)
+# ax1.set_ylabel('Y values for exp(-x)')
+# ax1.set_title("Double Y axis")
+#
+# ax2 = ax1.twinx()  # this is the important function
+# ax2.plot(x, y2, 'r')
+# ax2.set_xlim([0, np.e])
+# ax2.set_ylabel('Y values for ln(x)')
+# ax2.set_xlabel('Same X for both exp(-x) and ln(x)')
+#
+# plt.show()

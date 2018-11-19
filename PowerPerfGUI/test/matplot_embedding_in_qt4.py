@@ -35,7 +35,7 @@ class MyMplCanvas(FigureCanvas):
 
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         fig = Figure(figsize=(width, height), dpi=dpi)
-
+        plt.title("zxl")
         fig.set_facecolor('gray')
         # fig.set_alpha(0.99)
         # plt.rcParams['axes.facecolor'] = 'gray'
@@ -70,6 +70,8 @@ class MyStaticMplCanvas(MyMplCanvas):
         t = arange(0.0, 3.0, 0.01)
         s = sin(2*pi*t)
         self.axes.plot(t, s)
+        self.axes.set_title("ax2")
+
 
 
 class MyDynamicMplCanvas(MyMplCanvas):
@@ -79,16 +81,17 @@ class MyDynamicMplCanvas(MyMplCanvas):
         MyMplCanvas.__init__(self, *args, **kwargs)
         timer = QtCore.QTimer(self)
         timer.timeout.connect(self.update_figure)
-        timer.start(1000)
+        timer.start(100)
 
     def compute_initial_figure(self):
         self.axes.plot([0, 1, 2, 3], [1, 2, 0, 4], 'r')
-
+        self.axes.set_title("good")
     def update_figure(self):
         # Build a list of 4 random integers between 0 and 10 (both inclusive)
         l = [random.randint(0, 10) for i in range(4)]
-        self.axes.cla()
+        self.axes.clear()
         self.axes.plot([0, 1, 2, 3], l, 'r')
+        self.axes.set_title("good")
         self.draw()
 
 

@@ -329,7 +329,6 @@ class myThread_monitor(threading.Thread):
         self.line_x = []
         self.line_y = []
         self.line, = self.axe_s.plot([], [],  "y--o", linewidth=2.0, label= "".join(["jitter: ","%.2f"%(0), "%"]))
-
         # plt.tight_layout() #只有在全屏显示时效果才好，否则会有些区域看不到。
 
         plt.legend(loc="best", prop=self.myfont, shadow=True)
@@ -374,8 +373,8 @@ class myThread_monitor(threading.Thread):
         plt.ylim(0, max_y*1.02)
         plt.xlim(0, max_x + 5)
 
-        line.set_label("".join(["jitter: ","%.2f"%(100.0*(max_y - min_y) / mean_y), "%", "\nMin=%d"%min_y, "\nMax=%d"%max_y ]))
-        axe.legend(loc="best", prop=self.myfont, shadow=True)
+        # line.set_label("".join(["jitter: ","%.2f"%(100.0*(max_y - min_y) / mean_y), "%", "\nMin=%d"%min_y, "\nMax=%d"%max_y ]))
+        # axe.legend(loc="best", prop=self.myfont, shadow=True)
 
         fig.canvas.draw()
         fig.canvas.flush_events()
