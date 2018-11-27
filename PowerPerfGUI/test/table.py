@@ -27,6 +27,13 @@ def main():
     vBoxlayout.addWidget(pushButton3)
     tab1.setLayout(vBoxlayout)
 
+    hBoxlayout = QtGui.QHBoxLayout()
+    pushButtonh1 = QtGui.QPushButton("Start1")
+    pushButtonh2 = QtGui.QPushButton("Start2")
+    hBoxlayout.addWidget(pushButtonh1)
+    hBoxlayout.addWidget(pushButtonh2)
+    tab2.setLayout(hBoxlayout)
+
     # Add tabs
     tabs.addTab(tab1, "Tab 1")
     tabs.addTab(tab2, "Tab 2")
