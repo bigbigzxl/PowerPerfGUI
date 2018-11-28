@@ -874,7 +874,7 @@ class KeyCode:
 class Server(AdbTools):
 
     def __init__(self):
-        super(Server, self).__init__(self, device_id='')
+        super(Server, self).__init__()
         self.root()
 
     def fun(self):
@@ -947,21 +947,57 @@ class Server(AdbTools):
                 pass
 
     def get_perf_author(self):
+        """
+        获取perf的权限，自动执行，无需手动开启；
+        :return:
+        """
         if not self.file_exists("/proc/sys/kernel/perf_event_paranoid"):
-            print()
+            print("Your Android(linux kernel) system is not a Development version.")
+            exit(0)
+
+        perf_event_paranoid = self.shell("cat /proc/sys/kernel/perf_event_paranoid").readlines()[0].strip()
+        if perf_event_paranoid == "-1":
+            print("You're authorized(perf_event_paranoid).")
+        else:
+            # 记得放在config文件下。
+            # 注意在安卓下的shell脚本开头是： #! /system/bin/sh
+            cmd = "./config/get_perf_author.sh"
+
+            for i in range(5):
+                try:
+                    # os.system(cmd)
+                    # 只有这种方式下才可以连续地执行shell指令，否则只能一条条执行，这里我被卡了很多时间的。
+                    data = os.popen("adb shell < " + cmd)
+
+                    perf_event_paranoid = self.shell("cat /proc/sys/kernel/perf_event_paranoid").readlines()[0].strip()
+
+                    if perf_event_paranoid == "-1":
+                        print("Get perf author success.")
+                        return
+
+                except Exception as e:
+                         print("Error@get perf authority:", e)
+
+            print("For some Unknow Error we can not get perf authority.")
+
+            exit(-1)
 
 if __name__ == '__main__':
-    # 设置adb位置，会自动去ANDROID_HOME下找"platform-tools", "adb.exe"。
-    dir = "E:\SDK"
-    os.environ['ANDROID_HOME'] = dir
+
+
+    # Step1: 设置adb位置，会自动去ANDROID_HOME下找"platform-tools", "adb.exe"。
+    SDK_dir = "E:\SDK"
+    os.environ['ANDROID_HOME'] = SDK_dir
     # print(os.environ.get('ANDROID_HOME'))
 
-    communicator = AdbTools()
-    # print communicator.root()
+    # Step2: 获取perf的权限
+    server = Server()
+    server.get_perf_author()
 
-    print communicator.shell("echo -1 > /proc/sys/kernel/perf_event_paranoid").readlines()
-    print communicator.shell("cat /proc/sys/kernel/perf_event_paranoid").readlines()[0].strip()
-    print communicator.file_exists("/proc/sys/kernel/perf_event_paranoid")
+
+
+    # Step3: 开始接受GUI过来的事件并进行处理然后做出相应的控制；
+
 
     #com.example.administrator.hello_cmake
     # pakeage = "com.example.administrator.hello_cmake"
