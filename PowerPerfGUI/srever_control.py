@@ -994,8 +994,6 @@ if __name__ == '__main__':
     server = Server()
     server.get_perf_author()
 
-
-
     # Step3: 开始接受GUI过来的事件并进行处理然后做出相应的控制；
 
 

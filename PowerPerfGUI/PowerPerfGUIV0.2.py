@@ -24,6 +24,7 @@ progversion = "0.1"
 
 ##############################PowerPerfGUIv0.2##################################
 # 1. add tab in window.
+#  2018.11.29 add 33 items show.
 
 class MyMplCanvas(FigureCanvas):
     """Ultimately, this is a QWidget (as well as a FigureCanvasAgg, etc.)."""
@@ -118,8 +119,8 @@ class Window(QtGui.QMainWindow):
         self.checkbox1  = QtGui.QCheckBox('CPU_CYCLES')
         self.checkbox2  = QtGui.QCheckBox('INST_RETIRED')
 
-        self.checkbox3  = QtGui.QCheckBox('BR_PRED')
-        self.checkbox4  = QtGui.QCheckBox('BR_MIS_PRED')
+        self.checkbox3  = QtGui.QCheckBox('LD_RETIRED')
+        self.checkbox4  = QtGui.QCheckBox('ST_RETIRED')
 
         self.checkbox5  = QtGui.QCheckBox('L1D_CACHE')
         self.checkbox6  = QtGui.QCheckBox('L1D_CACHE_REFILL')
@@ -132,8 +133,46 @@ class Window(QtGui.QMainWindow):
         self.checkbox12 = QtGui.QCheckBox('L2D_CACHE_WB')
         self.checkbox13 = QtGui.QCheckBox('L2D_CACHE_ALLOCATE')
 
+        self.checkbox14 = QtGui.QCheckBox('L1I_CACHE')
+        self.checkbox15 = QtGui.QCheckBox('L1I_TLB_REFILL')
+        self.checkbox16 = QtGui.QCheckBox('L1I_CACHE_REFILL')
+
+        self.checkbox17 = QtGui.QCheckBox('BUS_CYCLES')
+        self.checkbox18 = QtGui.QCheckBox('BUS_ACCESS')
+        self.checkbox19 = QtGui.QCheckBox('MEM_ACCESS')
+        self.checkbox20 = QtGui.QCheckBox('MEMORY_ERROR')
+        self.checkbox21 = QtGui.QCheckBox('UNALIGNED_LDST_RETIRED')
+
+        self.checkbox22 = QtGui.QCheckBox('BR_PRED')
+        self.checkbox23 = QtGui.QCheckBox('BR_MIS_PRED')
+        self.checkbox24 = QtGui.QCheckBox('BR_IMMED_RETIRED')
+        self.checkbox25 = QtGui.QCheckBox('BR_RETURN_RETIRED')
+
+        self.checkbox26 = QtGui.QCheckBox('INST_RETIRED')
+        self.checkbox27 = QtGui.QCheckBox('INST_SPEC')
+
+        self.checkbox28 = QtGui.QCheckBox('EXC_TAKEN')
+        self.checkbox29 = QtGui.QCheckBox('EXC_RETURN')
+        self.checkbox30 = QtGui.QCheckBox('CID_WRITE_RETIRED')
+        self.checkbox31 = QtGui.QCheckBox('PC_WRITE_RETIRED')
+        self.checkbox32 = QtGui.QCheckBox('TTBR_WRITE_RETIRED')
+        self.checkbox33 = QtGui.QCheckBox('CHAIN')
+
+        # self.check_boxs = [self.checkbox1 ,self.checkbox2 ,self.checkbox3 ,self.checkbox4 ,self.checkbox5 ,
+        #                    self.checkbox6 ,self.checkbox7 ,self.checkbox8 ,self.checkbox9 ,self.checkbox10,
+        #                    self.checkbox11,self.checkbox12,self.checkbox13,self.checkbox14,self.checkbox15,
+        #                    self.checkbox16,self.checkbox17,self.checkbox18,self.checkbox19,self.checkbox20,
+        #                    self.checkbox21,self.checkbox22,self.checkbox23,self.checkbox24,self.checkbox25,
+        #                    self.checkbox26,self.checkbox27,self.checkbox28,self.checkbox29,self.checkbox30,
+        #                    self.checkbox31,self.checkbox32,self.checkbox33]
+
         font      = "Times New Roman"
         font_size = 16
+        # for box in self.check_boxs:
+        #     box.setFont( QFont(font, font_size))
+        #     box.toggled.connect(lambda: self.checkboxRecall(box))
+
+
         self.checkbox1.setFont( QFont(font, font_size))
         self.checkbox2.setFont( QFont(font, font_size))
         self.checkbox3.setFont( QFont(font, font_size))
@@ -147,6 +186,26 @@ class Window(QtGui.QMainWindow):
         self.checkbox11.setFont( QFont(font, font_size))
         self.checkbox12.setFont( QFont(font, font_size))
         self.checkbox13.setFont( QFont(font, font_size))
+        self.checkbox14.setFont( QFont(font, font_size))
+        self.checkbox15.setFont( QFont(font, font_size))
+        self.checkbox16.setFont( QFont(font, font_size))
+        self.checkbox17.setFont( QFont(font, font_size))
+        self.checkbox18.setFont( QFont(font, font_size))
+        self.checkbox19.setFont( QFont(font, font_size))
+        self.checkbox20.setFont( QFont(font, font_size))
+        self.checkbox21.setFont( QFont(font, font_size))
+        self.checkbox22.setFont( QFont(font, font_size))
+        self.checkbox23.setFont( QFont(font, font_size))
+        self.checkbox24.setFont( QFont(font, font_size))
+        self.checkbox25.setFont( QFont(font, font_size))
+        self.checkbox26.setFont( QFont(font, font_size))
+        self.checkbox27.setFont( QFont(font, font_size))
+        self.checkbox28.setFont( QFont(font, font_size))
+        self.checkbox29.setFont( QFont(font, font_size))
+        self.checkbox30.setFont( QFont(font, font_size))
+        self.checkbox31.setFont( QFont(font, font_size))
+        self.checkbox32.setFont( QFont(font, font_size))
+        self.checkbox33.setFont( QFont(font, font_size))
 
         self.checkbox1.toggled.connect(lambda: self.checkboxRecall(self.checkbox1))
         self.checkbox2.toggled.connect(lambda: self.checkboxRecall(self.checkbox2))
@@ -161,10 +220,31 @@ class Window(QtGui.QMainWindow):
         self.checkbox11.toggled.connect(lambda: self.checkboxRecall(self.checkbox11))
         self.checkbox12.toggled.connect(lambda: self.checkboxRecall(self.checkbox12))
         self.checkbox13.toggled.connect(lambda: self.checkboxRecall(self.checkbox13))
+        self.checkbox14.toggled.connect(lambda: self.checkboxRecall(self.checkbox14))
+        self.checkbox15.toggled.connect(lambda: self.checkboxRecall(self.checkbox15))
+        self.checkbox16.toggled.connect(lambda: self.checkboxRecall(self.checkbox16))
+        self.checkbox17.toggled.connect(lambda: self.checkboxRecall(self.checkbox17))
+        self.checkbox18.toggled.connect(lambda: self.checkboxRecall(self.checkbox18))
+        self.checkbox19.toggled.connect(lambda: self.checkboxRecall(self.checkbox19))
+        self.checkbox20.toggled.connect(lambda: self.checkboxRecall(self.checkbox20))
+        self.checkbox21.toggled.connect(lambda: self.checkboxRecall(self.checkbox21))
+        self.checkbox22.toggled.connect(lambda: self.checkboxRecall(self.checkbox22))
+        self.checkbox23.toggled.connect(lambda: self.checkboxRecall(self.checkbox23))
+        self.checkbox24.toggled.connect(lambda: self.checkboxRecall(self.checkbox24))
+        self.checkbox25.toggled.connect(lambda: self.checkboxRecall(self.checkbox25))
+        self.checkbox26.toggled.connect(lambda: self.checkboxRecall(self.checkbox26))
+        self.checkbox27.toggled.connect(lambda: self.checkboxRecall(self.checkbox27))
+        self.checkbox28.toggled.connect(lambda: self.checkboxRecall(self.checkbox28))
+        self.checkbox29.toggled.connect(lambda: self.checkboxRecall(self.checkbox29))
+        self.checkbox30.toggled.connect(lambda: self.checkboxRecall(self.checkbox30))
+        self.checkbox31.toggled.connect(lambda: self.checkboxRecall(self.checkbox31))
+        self.checkbox32.toggled.connect(lambda: self.checkboxRecall(self.checkbox32))
+        self.checkbox32.toggled.connect(lambda: self.checkboxRecall(self.checkbox33))
 
 
         groupbox_checkable_layout = QtGui.QVBoxLayout()
-
+        # for box in self.check_boxs:
+        #     groupbox_checkable_layout.addWidget(box)
         groupbox_checkable_layout.addWidget(self.checkbox1)
         groupbox_checkable_layout.addWidget(self.checkbox2)
         groupbox_checkable_layout.addWidget(self.checkbox3)
@@ -178,6 +258,26 @@ class Window(QtGui.QMainWindow):
         groupbox_checkable_layout.addWidget(self.checkbox11)
         groupbox_checkable_layout.addWidget(self.checkbox12)
         groupbox_checkable_layout.addWidget(self.checkbox13)
+        groupbox_checkable_layout.addWidget(self.checkbox14)
+        groupbox_checkable_layout.addWidget(self.checkbox15)
+        groupbox_checkable_layout.addWidget(self.checkbox16)
+        groupbox_checkable_layout.addWidget(self.checkbox17)
+        groupbox_checkable_layout.addWidget(self.checkbox18)
+        groupbox_checkable_layout.addWidget(self.checkbox19)
+        groupbox_checkable_layout.addWidget(self.checkbox20)
+        groupbox_checkable_layout.addWidget(self.checkbox21)
+        groupbox_checkable_layout.addWidget(self.checkbox22)
+        groupbox_checkable_layout.addWidget(self.checkbox23)
+        groupbox_checkable_layout.addWidget(self.checkbox24)
+        groupbox_checkable_layout.addWidget(self.checkbox25)
+        groupbox_checkable_layout.addWidget(self.checkbox26)
+        groupbox_checkable_layout.addWidget(self.checkbox27)
+        groupbox_checkable_layout.addWidget(self.checkbox28)
+        groupbox_checkable_layout.addWidget(self.checkbox29)
+        groupbox_checkable_layout.addWidget(self.checkbox30)
+        groupbox_checkable_layout.addWidget(self.checkbox31)
+        groupbox_checkable_layout.addWidget(self.checkbox32)
+        groupbox_checkable_layout.addWidget(self.checkbox33)
 
 
         self.groupbox_checkable = QtGui.QGroupBox('PMU RAW EVENT')
@@ -225,6 +325,7 @@ class Window(QtGui.QMainWindow):
         self.setCentralWidget(central)
 
     def checkboxRecall(self, cbx):
+
         event_name = str(cbx.text())
         if cbx.isChecked():
             if not DISPATCH_DICTS.get(event_name):# 没打开过的, 则创建这么一个位置；

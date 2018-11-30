@@ -93,7 +93,7 @@ print DISPATCH_DICTS
 # #     print subpaths
 # #     print filenames
 #
-# names = ['adb_perfData_show.py', 'tester_unit.py']
+# names = ['adb_perf_SingleMuti_show_generalEventV0.1.py', 'tester_unit.py']
 # if "tester_unit.py" in names:
 #     print "True"
 

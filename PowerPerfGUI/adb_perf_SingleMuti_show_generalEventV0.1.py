@@ -704,7 +704,7 @@ if __name__ == "__main__":
     ###############################################################################
     # for mode single:
     # LOGE() style should be: "**label@perf,time=3.2,GFLOPS=8.2,"
-    MODE                       = "single"#"single"#"muti" #
+    MODE                       = "muti"#"single"#"muti" #
     KEY_STRING_FOR_DETECT      = "label@perf"
     KEY_STRING_FOR_SINGLE_MODE = "CPU_CYCLES"  # save files name;
     # shared by main thread.

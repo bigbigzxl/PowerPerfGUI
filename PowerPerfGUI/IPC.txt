@@ -1,0 +1,6160 @@
+
+11/30 10:52:38: Launching app
+$ adb push D:\04code\PowerPerf\ForAsmDebug\app\build\outputs\apk\debug\app-debug.apk /data/local/tmp/com.example.administrator.hello_cmake
+$ adb shell pm install -t -r "/data/local/tmp/com.example.administrator.hello_cmake"
+Success
+APK installed in 2 s 837 ms
+$ adb shell am start -n "com.example.administrator.hello_cmake/com.example.administrator.hello_cmake.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 5907 on device xiaomi-redmi_5a-2f88735d7d74
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+W/System: ClassLoader referenced unknown path: /system/app/MiuiContentCatcher/lib/arm64
+D/AccessibilityManager: current package=com.example.administrator.hello_cmake, accessibility manager mIsFinalEnabled=false, mOptimizeEnabled=true, mIsUiAutomationEnabled=false, mIsInterestedPackage=false
+D/ApplicationLoaders: ignored Vulkan layer search path /system/app/MiuiContentCatcher/lib/arm64:/system/lib:/vendor/lib for namespace 0xe941b0d0
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@de10b3c
+    BoostFramework() : mPerf = com.qualcomm.qti.Performance@6a640c5
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563084
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=18
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565663
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563596
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564216
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565788
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=20
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563324
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1561661
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1786395
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=3
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565572
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564763
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562131
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566513
+    label@perf,INST_RETIRED=1060450
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565792
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1785998
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565622
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564971
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565696
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565629
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563961
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564850
+    label@perf,INST_RETIRED=1060450
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=38
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562870
+    label@perf,INST_RETIRED=1060450
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563177
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562483
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1613090
+    label@perf,INST_RETIRED=1060453
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1610377
+    label@perf,INST_RETIRED=1060456
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1579676
+    label@perf,INST_RETIRED=1060455
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1673069
+    label@perf,INST_RETIRED=1060460
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=2
+E/perf@perf: label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563114
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562044
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1585066
+E/perf@perf: label@perf,INST_RETIRED=1060457
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1583410
+    label@perf,INST_RETIRED=1060456
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=39
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1645954
+    label@perf,INST_RETIRED=1060458
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=43
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565321
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563092
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1599518
+    label@perf,INST_RETIRED=1060456
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=37
+E/perf@perf: label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1610498
+    label@perf,INST_RETIRED=1060457
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567886
+    label@perf,INST_RETIRED=1060454
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=34
+E/perf@perf: label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563088
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=20
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1656892
+    label@perf,INST_RETIRED=1060457
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1784911
+    label@perf,INST_RETIRED=1060446
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562258
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567304
+    label@perf,INST_RETIRED=1060464
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567258
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=41
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1702686
+    label@perf,INST_RETIRED=1060457
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1673725
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1656273
+    label@perf,INST_RETIRED=1060461
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=33
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563934
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562614
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1598766
+    label@perf,INST_RETIRED=1060454
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=3
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1606345
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1645178
+    label@perf,INST_RETIRED=1060455
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564794
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1708474
+    label@perf,INST_RETIRED=1060454
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1646869
+    label@perf,INST_RETIRED=1060454
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564613
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1625492
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562781
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1647924
+    label@perf,INST_RETIRED=1060457
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1575718
+    label@perf,INST_RETIRED=1060459
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=39
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1594734
+E/perf@perf: label@perf,INST_RETIRED=1060459
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=37
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1679603
+    label@perf,INST_RETIRED=1060456
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=33
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1699664
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=33
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562269
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=2
+E/perf@perf: label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1587294
+    label@perf,INST_RETIRED=1060458
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1652619
+    label@perf,INST_RETIRED=1060458
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=33
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1784660
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562561
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1694464
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566147
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564166
+E/perf@perf: label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565508
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566315
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565909
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565425
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=2
+E/perf@perf: label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563009
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563010
+    label@perf,INST_RETIRED=1060451
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565752
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565623
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565875
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566964
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565878
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565865
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565182
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565954
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565257
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565727
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+E/perf@perf: label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564684
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565520
+    label@perf,INST_RETIRED=1060447
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565640
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565089
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=20
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1599407
+    label@perf,INST_RETIRED=1060450
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=41
+    label@perf,L1D_TLB_REFILL=3
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565271
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+E/perf@perf: label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565821
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565704
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566035
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566166
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565978
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1568180
+E/perf@perf: label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=3
+    label@perf,L1D_CACHE=2172
+    label@perf,UNALIGNED_LDST_RETIRED=44
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565525
+E/perf@perf: label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565170
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8937_64_LA.UM.5.5.R1__release_AU (I83a540a04a)
+    OpenGL ES Shader Compiler Version: XE031.09.00.04
+    Build Date: 09/18/17 Mon
+    Local Branch:
+    Remote Branch: quic/gfx-adreno.lnx.1.0.r5-rel
+    Local Patches: NONE
+    Reconstruct Branch: NOTHING
+I/OpenGLRenderer: Initialized EGL, version 1.4
+D/OpenGLRenderer: Swap behavior 1
+W/Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+W/IInputConnectionWrapper: reportFullscreenMode on inexistent InputConnection
+
+11/30 10:53:16: Launching app
+No apk changes detected since last installation, skipping installation of D:\04code\PowerPerf\ForAsmDebug\app\build\outputs\apk\debug\app-debug.apk
+$ adb shell am force-stop com.example.administrator.hello_cmake
+$ adb shell am start -n "com.example.administrator.hello_cmake/com.example.administrator.hello_cmake.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Client not ready yet..Connected to process 6135 on device xiaomi-redmi_5a-2f88735d7d74
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/art: Late-enabling -Xcheck:jni
+D/TidaProvider: TidaProvider()
+W/ReflectionUtils: java.lang.NoSuchMethodException: android.os.MessageQueue#enableMonitor()#bestmatch
+        at miui.util.ReflectionUtils.findMethodBestMatch(ReflectionUtils.java:338)
+        at miui.util.ReflectionUtils.findMethodBestMatch(ReflectionUtils.java:375)
+        at miui.util.ReflectionUtils.callMethod(ReflectionUtils.java:800)
+        at miui.util.ReflectionUtils.tryCallMethod(ReflectionUtils.java:818)
+        at android.os.BaseLooper.enableMonitor(BaseLooper.java:47)
+        at android.os.Looper.prepareMainLooper(Looper.java:112)
+        at android.app.ActivityThread.main(ActivityThread.java:6221)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:794)
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@d31f26a
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+W/System: ClassLoader referenced unknown path: /system/app/MiuiContentCatcher/lib/arm64
+D/AccessibilityManager: current package=com.example.administrator.hello_cmake, accessibility manager mIsFinalEnabled=false, mOptimizeEnabled=true, mIsUiAutomationEnabled=false, mIsInterestedPackage=false
+D/ApplicationLoaders: ignored Vulkan layer search path /system/app/MiuiContentCatcher/lib/arm64:/system/lib:/vendor/lib for namespace 0xe941b0d0
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@de10b3c
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@6a640c5
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1600343
+    label@perf,INST_RETIRED=1060461
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1568105
+    label@perf,INST_RETIRED=1060450
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=50
+    label@perf,L1D_TLB_REFILL=5
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565092
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564873
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565681
+    label@perf,INST_RETIRED=1060450
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566623
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565489
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563838
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565710
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566133
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+E/perf@perf: label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563591
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562333
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564093
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1569404
+    label@perf,INST_RETIRED=1060453
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=51
+    label@perf,L1D_TLB_REFILL=5
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1680159
+    label@perf,INST_RETIRED=1060455
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1585476
+    label@perf,INST_RETIRED=1060458
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=42
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1595660
+    label@perf,INST_RETIRED=1060454
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=40
+    label@perf,L1D_TLB_REFILL=1
+E/perf@perf: label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1628113
+    label@perf,INST_RETIRED=1060457
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1607003
+    label@perf,INST_RETIRED=1060450
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567033
+    label@perf,INST_RETIRED=1060457
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1704258
+    label@perf,INST_RETIRED=1060457
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1648965
+    label@perf,INST_RETIRED=1060456
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1580783
+    label@perf,INST_RETIRED=1060451
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=38
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1634906
+    label@perf,INST_RETIRED=1060456
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=33
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565985
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=33
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1693198
+    label@perf,INST_RETIRED=1060453
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1658541
+E/perf@perf: label@perf,INST_RETIRED=1060455
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=43
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1755087
+    label@perf,INST_RETIRED=1060451
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1640361
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=38
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1585151
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566990
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1590990
+    label@perf,INST_RETIRED=1060453
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=37
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566858
+E/perf@perf: label@perf,INST_RETIRED=1060456
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1636910
+    label@perf,INST_RETIRED=1060457
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=47
+    label@perf,L1D_TLB_REFILL=4
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566488
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565965
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=189
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563974
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564320
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563136
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562066
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562770
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566014
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565216
+    label@perf,INST_RETIRED=1060449
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566203
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566083
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565914
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566245
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565387
+E/perf@perf: label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564675
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565612
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565977
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563159
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563294
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566313
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=33
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564293
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564078
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562207
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564179
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566602
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565194
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565761
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567242
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566588
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565852
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565731
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=2172
+    label@perf,UNALIGNED_LDST_RETIRED=44
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1786560
+E/perf@perf: label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566010
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566193
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566269
+    label@perf,INST_RETIRED=1060450
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=37
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565474
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566015
+    label@perf,INST_RETIRED=1060447
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565476
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567456
+    label@perf,INST_RETIRED=1060451
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567146
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563096
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564965
+E/perf@perf: label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1786461
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565142
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563472
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565405
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1786312
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565749
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+E/perf@perf: label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566678
+    label@perf,INST_RETIRED=1060449
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564092
+    label@perf,INST_RETIRED=1060448
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565666
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1569034
+    label@perf,INST_RETIRED=1060453
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=46
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565980
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1562616
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565231
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1567020
+    label@perf,INST_RETIRED=1060450
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566210
+    label@perf,INST_RETIRED=1060450
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1564848
+    label@perf,INST_RETIRED=1060448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1565292
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1631480
+E/perf@perf: label@perf,INST_RETIRED=1060454
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=54
+    label@perf,L1D_TLB_REFILL=4
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563855
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563186
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1563719
+    label@perf,INST_RETIRED=1060447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1705836
+    label@perf,INST_RETIRED=1060454
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=43
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1678299
+    label@perf,INST_RETIRED=1060455
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=33
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1566359
+    label@perf,INST_RETIRED=1060452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8937_64_LA.UM.5.5.R1__release_AU (I83a540a04a)
+    OpenGL ES Shader Compiler Version: XE031.09.00.04
+    Build Date: 09/18/17 Mon
+    Local Branch:
+    Remote Branch: quic/gfx-adreno.lnx.1.0.r5-rel
+    Local Patches: NONE
+    Reconstruct Branch: NOTHING
+I/OpenGLRenderer: Initialized EGL, version 1.4
+D/OpenGLRenderer: Swap behavior 1
+W/Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+W/IInputConnectionWrapper: reportFullscreenMode on inexistent InputConnection
+
+11/30 10:55:29: Launching app
+$ adb push D:\04code\PowerPerf\ForAsmDebug\app\build\outputs\apk\debug\app-debug.apk /data/local/tmp/com.example.administrator.hello_cmake
+$ adb shell pm install -t -r "/data/local/tmp/com.example.administrator.hello_cmake"
+Success
+APK installed in 2 s 951 ms
+$ adb shell am start -n "com.example.administrator.hello_cmake/com.example.administrator.hello_cmake.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Client not ready yet..Connected to process 6718 on device xiaomi-redmi_5a-2f88735d7d74
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+W/System: ClassLoader referenced unknown path: /system/app/MiuiContentCatcher/lib/arm64
+D/AccessibilityManager: current package=com.example.administrator.hello_cmake, accessibility manager mIsFinalEnabled=false, mOptimizeEnabled=true, mIsUiAutomationEnabled=false, mIsInterestedPackage=false
+D/ApplicationLoaders: ignored Vulkan layer search path /system/app/MiuiContentCatcher/lib/arm64:/system/lib:/vendor/lib for namespace 0xe941b0d0
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@de10b3c
+    BoostFramework() : mPerf = com.qualcomm.qti.Performance@6a640c5
+E/perf@perf: inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692852
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694309
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=19
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694753
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=693981
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695334
+E/perf@perf: label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=693799
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692024
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694997
+E/perf@perf: label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695158
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1170130
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=48
+    label@perf,L1D_TLB_REFILL=4
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695533
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=19
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695357
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695334
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695180
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695406
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696208
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695027
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696584
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694075
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=692945
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=696068
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695306
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=29
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695693
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695654
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695322
+    label@perf,INST_RETIRED=740451
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695180
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=694217
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692599
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=691750
+E/perf@perf: label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692196
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695194
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695459
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=19
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695536
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695473
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695443
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695845
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696133
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694305
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692212
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=692495
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=691707
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695339
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=693568
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692885
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695087
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=693917
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695421
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695217
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=19
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695585
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695866
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694264
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695900
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695564
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695650
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694568
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692894
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=692950
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695809
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695835
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695775
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695380
+    label@perf,INST_RETIRED=740448
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=18
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695578
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=697045
+E/perf@perf: label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1215663
+    label@perf,INST_RETIRED=740446
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694936
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692683
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=696209
+    label@perf,INST_RETIRED=740450
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695098
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695219
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695542
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694039
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=20
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=746035
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=43
+    label@perf,L1D_TLB_REFILL=4
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=696874
+    label@perf,INST_RETIRED=740453
+E/perf@perf: label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=842683
+    label@perf,INST_RETIRED=740451
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=870491
+    label@perf,INST_RETIRED=740453
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=35
+    label@perf,L1D_TLB_REFILL=1
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=809762
+    label@perf,INST_RETIRED=740452
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=697347
+    label@perf,INST_RETIRED=740454
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=827451
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1037615
+    label@perf,INST_RETIRED=740451
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1137916
+    label@perf,INST_RETIRED=740452
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=62
+    label@perf,L1D_TLB_REFILL=5
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695997
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696532
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=696263
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695846
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1216222
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694758
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=692395
+E/perf@perf: label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692236
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695562
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695278
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696247
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696452
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695580
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696882
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=902853
+E/perf@perf: label@perf,INST_RETIRED=740450
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=44
+    label@perf,L1D_TLB_REFILL=2
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1060786
+    label@perf,INST_RETIRED=740453
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=34
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=868326
+    label@perf,INST_RETIRED=740453
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+E/perf@perf: label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=692330
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=691886
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=693780
+    label@perf,INST_RETIRED=740449
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=36
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8937_64_LA.UM.5.5.R1__release_AU (I83a540a04a)
+    OpenGL ES Shader Compiler Version: XE031.09.00.04
+    Build Date: 09/18/17 Mon
+    Local Branch:
+    Remote Branch: quic/gfx-adreno.lnx.1.0.r5-rel
+    Local Patches: NONE
+    Reconstruct Branch: NOTHING
+I/OpenGLRenderer: Initialized EGL, version 1.4
+D/OpenGLRenderer: Swap behavior 1
+W/Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+W/IInputConnectionWrapper: reportFullscreenMode on inexistent InputConnection
+
+11/30 10:56:05: Launching app
+No apk changes detected since last installation, skipping installation of D:\04code\PowerPerf\ForAsmDebug\app\build\outputs\apk\debug\app-debug.apk
+$ adb shell am force-stop com.example.administrator.hello_cmake
+$ adb shell am start -n "com.example.administrator.hello_cmake/com.example.administrator.hello_cmake.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Client not ready yet..Connected to process 6924 on device xiaomi-redmi_5a-2f88735d7d74
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/art: Late-enabling -Xcheck:jni
+D/TidaProvider: TidaProvider()
+W/ReflectionUtils: java.lang.NoSuchMethodException: android.os.MessageQueue#enableMonitor()#bestmatch
+        at miui.util.ReflectionUtils.findMethodBestMatch(ReflectionUtils.java:338)
+        at miui.util.ReflectionUtils.findMethodBestMatch(ReflectionUtils.java:375)
+        at miui.util.ReflectionUtils.callMethod(ReflectionUtils.java:800)
+        at miui.util.ReflectionUtils.tryCallMethod(ReflectionUtils.java:818)
+        at android.os.BaseLooper.enableMonitor(BaseLooper.java:47)
+        at android.os.Looper.prepareMainLooper(Looper.java:112)
+        at android.app.ActivityThread.main(ActivityThread.java:6221)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:794)
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@d31f26a
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+W/System: ClassLoader referenced unknown path: /system/app/MiuiContentCatcher/lib/arm64
+D/ApplicationLoaders: ignored Vulkan layer search path /system/app/MiuiContentCatcher/lib/arm64:/system/lib:/vendor/lib for namespace 0xe941b0d0
+D/AccessibilityManager: current package=com.example.administrator.hello_cmake, accessibility manager mIsFinalEnabled=false, mOptimizeEnabled=true, mIsUiAutomationEnabled=false, mIsInterestedPackage=false
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@de10b3c
+    BoostFramework() : mPerf = com.qualcomm.qti.Performance@6a640c5
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=693011
+E/perf@perf: label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695553
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=32
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694071
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=189
+E/perf@perf: label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695603
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694908
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694033
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694342
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695301
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694418
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694931
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694569
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695140
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694863
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694612
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=694859
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694380
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695607
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=696749
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695829
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696218
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695132
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695429
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694969
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694896
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695303
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694736
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695258
+E/perf@perf: label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694793
+    label@perf,INST_RETIRED=740448
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695163
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694855
+    label@perf,INST_RETIRED=740447
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694756
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695167
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695351
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695267
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695361
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=20
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695094
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=695738
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=20
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695433
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=37
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695758
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696593
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695382
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694446
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695016
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695264
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696374
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694884
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694669
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694518
+E/perf@perf: label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695382
+E/perf@perf: label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695476
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695461
+E/perf@perf: label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694940
+    label@perf,INST_RETIRED=740448
+E/perf@perf: label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694723
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694992
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695149
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695732
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=696327
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=29
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694437
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695007
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=29
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695204
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+E/perf@perf: label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694724
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+E/perf@perf: label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    label@perf,CPU_CYCLES=694967
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694493
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695837
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=31
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695042
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695697
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=30
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695860
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=696100
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695460
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+E/perf@perf: label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=700174
+    label@perf,INST_RETIRED=740451
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=44
+    label@perf,L1D_TLB_REFILL=3
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695496
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=697037
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695995
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695884
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694923
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=19
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695636
+    label@perf,INST_RETIRED=740449
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695546
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695432
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695250
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695982
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695133
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694810
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695434
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695508
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695371
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695083
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=698357
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=23
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695186
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=21
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695148
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=25
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695787
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=26
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695306
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695152
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=695818
+    label@perf,INST_RETIRED=740451
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694284
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+E/perf@perf: DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=694941
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=189
+    label@perf,L1D_CACHE_REFILL=28
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=189
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=693611
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=24
+    label@perf,L1D_TLB_REFILL=1
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=696183
+    label@perf,INST_RETIRED=740448
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=28
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694855
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+E/perf@perf: label@perf,L1D_CACHE_REFILL=22
+    label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=694881
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=187
+    label@perf,L1D_CACHE_REFILL=22
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=187
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=695062
+    label@perf,INST_RETIRED=740447
+    label@perf,MEM_ACCESS=188
+    label@perf,L1D_CACHE_REFILL=27
+E/perf@perf: label@perf,L1D_TLB_REFILL=0
+    label@perf,L1D_CACHE=188
+    label@perf,UNALIGNED_LDST_RETIRED=1
+    DEBUG
+I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8937_64_LA.UM.5.5.R1__release_AU (I83a540a04a)
+    OpenGL ES Shader Compiler Version: XE031.09.00.04
+    Build Date: 09/18/17 Mon
+    Local Branch:
+    Remote Branch: quic/gfx-adreno.lnx.1.0.r5-rel
+    Local Patches: NONE
+    Reconstruct Branch: NOTHING
+I/OpenGLRenderer: Initialized EGL, version 1.4
+D/OpenGLRenderer: Swap behavior 1
+W/Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+W/IInputConnectionWrapper: reportFullscreenMode on inexistent InputConnection

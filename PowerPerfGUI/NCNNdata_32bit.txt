@@ -1,0 +1,554 @@
+
+11/30 14:20:23: Launching app
+$ adb push D:\04code\PowerPerf\ForAsmDebug\app\build\outputs\apk\debug\app-debug.apk /data/local/tmp/com.example.administrator.hello_cmake
+$ adb shell pm install -t -r "/data/local/tmp/com.example.administrator.hello_cmake"
+Success
+APK installed in 2 s 916 ms
+$ adb shell am start -n "com.example.administrator.hello_cmake/com.example.administrator.hello_cmake.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Client not ready yet..Connected to process 17364 on device xiaomi-redmi_5a-2f88735d7d74
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+W/ReflectionUtils: java.lang.NoSuchMethodException: android.os.MessageQueue#enableMonitor()#bestmatch
+        at miui.util.ReflectionUtils.findMethodBestMatch(ReflectionUtils.java:338)
+        at miui.util.ReflectionUtils.findMethodBestMatch(ReflectionUtils.java:375)
+        at miui.util.ReflectionUtils.callMethod(ReflectionUtils.java:800)
+        at miui.util.ReflectionUtils.tryCallMethod(ReflectionUtils.java:818)
+        at android.os.BaseLooper.enableMonitor(BaseLooper.java:47)
+        at android.os.Looper.prepareMainLooper(Looper.java:112)
+        at android.app.ActivityThread.main(ActivityThread.java:6221)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:794)
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@d31f26a
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+W/System: ClassLoader referenced unknown path: /system/app/MiuiContentCatcher/lib/arm64
+D/AccessibilityManager: current package=com.example.administrator.hello_cmake, accessibility manager mIsFinalEnabled=false, mOptimizeEnabled=true, mIsUiAutomationEnabled=false, mIsInterestedPackage=false
+D/ApplicationLoaders: ignored Vulkan layer search path /system/app/MiuiContentCatcher/lib/arm64:/system/lib:/vendor/lib for namespace 0xe941b0d0
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@de10b3c
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@6a640c5
+E/perf@perf: inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=2266824
+    label@perf,L1D_CACHE=648683
+    label@perf,L2D_CACHE=89140
+    label@perf,LD_RETIRED=333953
+    label@perf,ST_RETIRED=65168
+    label@perf,BR_PRED=24841
+    label@perf,INST_RETIRED=1445987
+E/perf@perf: inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=9157857
+    label@perf,L1D_CACHE=2669394
+    label@perf,L2D_CACHE=369664
+    label@perf,LD_RETIRED=1336163
+    label@perf,ST_RETIRED=279273
+    label@perf,BR_PRED=118586
+    label@perf,INST_RETIRED=5841639
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1547147
+    label@perf,L1D_CACHE=628148
+    label@perf,L2D_CACHE=50896
+E/perf@perf: label@perf,LD_RETIRED=338426
+    label@perf,ST_RETIRED=59552
+    label@perf,BR_PRED=21241
+    label@perf,INST_RETIRED=1440915
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1607558
+    label@perf,L1D_CACHE=678808
+    label@perf,L2D_CACHE=56135
+    label@perf,LD_RETIRED=340863
+    label@perf,ST_RETIRED=71912
+    label@perf,BR_PRED=35642
+    label@perf,INST_RETIRED=1487076
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=2309362
+    label@perf,L1D_CACHE=942048
+    label@perf,L2D_CACHE=83579
+    label@perf,LD_RETIRED=507532
+    label@perf,ST_RETIRED=89300
+    label@perf,BR_PRED=31801
+    label@perf,INST_RETIRED=2161003
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=3522599
+    label@perf,L1D_CACHE=1481626
+    label@perf,L2D_CACHE=125122
+    label@perf,LD_RETIRED=764489
+    label@perf,ST_RETIRED=150607
+    label@perf,BR_PRED=67081
+    label@perf,INST_RETIRED=3303463
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=908091
+    label@perf,L1D_CACHE=368542
+    label@perf,L2D_CACHE=19295
+    label@perf,LD_RETIRED=200957
+    label@perf,ST_RETIRED=36165
+    label@perf,BR_PRED=19561
+    label@perf,INST_RETIRED=846970
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=940074
+    label@perf,L1D_CACHE=392858
+    label@perf,L2D_CACHE=6877
+    label@perf,LD_RETIRED=204557
+    label@perf,ST_RETIRED=41743
+    label@perf,BR_PRED=28201
+    label@perf,INST_RETIRED=877315
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=22238586
+    label@perf,L1D_CACHE=9039523
+    label@perf,L2D_CACHE=853992
+    label@perf,LD_RETIRED=4884499
+    label@perf,ST_RETIRED=847736
+    label@perf,BR_PRED=277627
+    label@perf,INST_RETIRED=20789220
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=22158532
+    label@perf,L1D_CACHE=9315128
+    label@perf,L2D_CACHE=525582
+    label@perf,LD_RETIRED=5078862
+E/perf@perf: label@perf,ST_RETIRED=891831
+    label@perf,BR_PRED=411002
+    label@perf,INST_RETIRED=21438540
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=8160273
+    label@perf,L1D_CACHE=2316450
+    label@perf,L2D_CACHE=353025
+    label@perf,LD_RETIRED=1209365
+    label@perf,ST_RETIRED=227337
+    label@perf,BR_PRED=79482
+    label@perf,INST_RETIRED=5212535
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=4117158
+    label@perf,L1D_CACHE=1231715
+    label@perf,L2D_CACHE=138166
+    label@perf,LD_RETIRED=617343
+    label@perf,ST_RETIRED=129511
+    label@perf,BR_PRED=58681
+E/perf@perf: label@perf,INST_RETIRED=2696666
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=3174184
+    label@perf,L1D_CACHE=1331786
+    label@perf,L2D_CACHE=80587
+    label@perf,LD_RETIRED=714573
+    label@perf,ST_RETIRED=130141
+    label@perf,BR_PRED=59521
+    label@perf,INST_RETIRED=3040013
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1599809
+    label@perf,L1D_CACHE=214165
+    label@perf,L2D_CACHE=138233
+    label@perf,LD_RETIRED=98998
+    label@perf,ST_RETIRED=24788
+    label@perf,BR_PRED=12881
+    label@perf,INST_RETIRED=445142
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=473097
+    label@perf,L1D_CACHE=191839
+    label@perf,L2D_CACHE=12314
+    label@perf,LD_RETIRED=102965
+    label@perf,ST_RETIRED=18783
+    label@perf,BR_PRED=8761
+    label@perf,INST_RETIRED=437856
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=521739
+    label@perf,L1D_CACHE=214268
+    label@perf,L2D_CACHE=3949
+    label@perf,LD_RETIRED=116306
+    label@perf,ST_RETIRED=22744
+    label@perf,BR_PRED=19321
+    label@perf,INST_RETIRED=486588
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=188160
+    label@perf,L1D_CACHE=74998
+    label@perf,L2D_CACHE=774
+    label@perf,LD_RETIRED=42576
+    label@perf,ST_RETIRED=9687
+    label@perf,BR_PRED=15481
+    label@perf,INST_RETIRED=170767
+I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8937_64_LA.UM.5.5.R1__release_AU (I83a540a04a)
+    OpenGL ES Shader Compiler Version: XE031.09.00.04
+    Build Date: 09/18/17 Mon
+    Local Branch:
+    Remote Branch: quic/gfx-adreno.lnx.1.0.r5-rel
+    Local Patches: NONE
+    Reconstruct Branch: NOTHING
+I/OpenGLRenderer: Initialized EGL, version 1.4
+D/OpenGLRenderer: Swap behavior 1
+W/Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+W/IInputConnectionWrapper: reportFullscreenMode on inexistent InputConnection
+
+11/30 14:20:38: Launching app
+No apk changes detected since last installation, skipping installation of D:\04code\PowerPerf\ForAsmDebug\app\build\outputs\apk\debug\app-debug.apk
+$ adb shell am force-stop com.example.administrator.hello_cmake
+$ adb shell am start -n "com.example.administrator.hello_cmake/com.example.administrator.hello_cmake.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Client not ready yet..Connected to process 17538 on device xiaomi-redmi_5a-2f88735d7d74
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+E/linker: normalize_path - invalid input: "E", the input path should be absolute
+W/linker: Warning: unable to normalize "E"
+E/linker: normalize_path - invalid input: "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm", the input path should be absolute
+W/linker: Warning: unable to normalize "\SDK\NDK16.1\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\5.0.300080\lib\linux\arm"
+W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+W/System: ClassLoader referenced unknown path: /system/app/MiuiContentCatcher/lib/arm64
+D/AccessibilityManager: current package=com.example.administrator.hello_cmake, accessibility manager mIsFinalEnabled=false, mOptimizeEnabled=true, mIsUiAutomationEnabled=false, mIsInterestedPackage=false
+D/ApplicationLoaders: ignored Vulkan layer search path /system/app/MiuiContentCatcher/lib/arm64:/system/lib:/vendor/lib for namespace 0xe941b0d0
+V/BoostFramework: BoostFramework() : mPerf = com.qualcomm.qti.Performance@de10b3c
+    BoostFramework() : mPerf = com.qualcomm.qti.Performance@6a640c5
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=2264864
+    label@perf,L1D_CACHE=648675
+E/perf@perf: label@perf,L2D_CACHE=89079
+    label@perf,LD_RETIRED=333946
+    label@perf,ST_RETIRED=65167
+    label@perf,BR_PRED=24836
+    label@perf,INST_RETIRED=1445950
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=9162982
+    label@perf,L1D_CACHE=2669383
+    label@perf,L2D_CACHE=369756
+    label@perf,LD_RETIRED=1336157
+    label@perf,ST_RETIRED=279271
+    label@perf,BR_PRED=118582
+    label@perf,INST_RETIRED=5841596
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1549557
+    label@perf,L1D_CACHE=628135
+    label@perf,L2D_CACHE=50609
+    label@perf,LD_RETIRED=338414
+    label@perf,ST_RETIRED=59551
+    label@perf,BR_PRED=21236
+    label@perf,INST_RETIRED=1440874
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1606640
+    label@perf,L1D_CACHE=678795
+    label@perf,L2D_CACHE=56316
+    label@perf,LD_RETIRED=340848
+    label@perf,ST_RETIRED=71911
+    label@perf,BR_PRED=35636
+    label@perf,INST_RETIRED=1487036
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=2294718
+    label@perf,L1D_CACHE=942044
+    label@perf,L2D_CACHE=75893
+    label@perf,LD_RETIRED=507526
+    label@perf,ST_RETIRED=89299
+    label@perf,BR_PRED=31796
+    label@perf,INST_RETIRED=2160961
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=3523440
+    label@perf,L1D_CACHE=1481618
+    label@perf,L2D_CACHE=124010
+    label@perf,LD_RETIRED=764487
+    label@perf,ST_RETIRED=150606
+    label@perf,BR_PRED=67076
+    label@perf,INST_RETIRED=3303419
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=910894
+    label@perf,L1D_CACHE=368534
+    label@perf,L2D_CACHE=19218
+    label@perf,LD_RETIRED=200948
+    label@perf,ST_RETIRED=36162
+    label@perf,BR_PRED=19556
+    label@perf,INST_RETIRED=846926
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=938653
+    label@perf,L1D_CACHE=392832
+    label@perf,L2D_CACHE=7814
+    label@perf,LD_RETIRED=204549
+    label@perf,ST_RETIRED=41742
+    label@perf,BR_PRED=28196
+    label@perf,INST_RETIRED=877281
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=22198682
+    label@perf,L1D_CACHE=9039496
+    label@perf,L2D_CACHE=850521
+    label@perf,LD_RETIRED=4884488
+    label@perf,ST_RETIRED=847735
+    label@perf,BR_PRED=277621
+    label@perf,INST_RETIRED=20789184
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=22176892
+    label@perf,L1D_CACHE=9315110
+    label@perf,L2D_CACHE=527855
+    label@perf,LD_RETIRED=5078848
+    label@perf,ST_RETIRED=891831
+    label@perf,BR_PRED=410998
+    label@perf,INST_RETIRED=21438494
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=8130383
+    label@perf,L1D_CACHE=2316438
+E/perf@perf: label@perf,L2D_CACHE=349168
+    label@perf,LD_RETIRED=1209358
+    label@perf,ST_RETIRED=227334
+    label@perf,BR_PRED=79477
+    label@perf,INST_RETIRED=5212494
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=4134629
+E/perf@perf: label@perf,L1D_CACHE=1231716
+    label@perf,L2D_CACHE=140887
+    label@perf,LD_RETIRED=617337
+    label@perf,ST_RETIRED=129511
+    label@perf,BR_PRED=58676
+    label@perf,INST_RETIRED=2696637
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=3177422
+    label@perf,L1D_CACHE=1331788
+    label@perf,L2D_CACHE=80139
+    label@perf,LD_RETIRED=714575
+    label@perf,ST_RETIRED=130140
+E/perf@perf: label@perf,BR_PRED=59516
+    label@perf,INST_RETIRED=3039978
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=1610049
+    label@perf,L1D_CACHE=214156
+    label@perf,L2D_CACHE=138334
+    label@perf,LD_RETIRED=98992
+    label@perf,ST_RETIRED=24787
+    label@perf,BR_PRED=12876
+    label@perf,INST_RETIRED=445101
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: label@perf,CPU_CYCLES=472096
+    label@perf,L1D_CACHE=191832
+    label@perf,L2D_CACHE=11991
+    label@perf,LD_RETIRED=102958
+    label@perf,ST_RETIRED=18782
+    label@perf,BR_PRED=8756
+    label@perf,INST_RETIRED=437817
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+E/perf@perf: inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=515912
+    label@perf,L1D_CACHE=214266
+    label@perf,L2D_CACHE=2463
+    label@perf,LD_RETIRED=116302
+    label@perf,ST_RETIRED=22742
+    label@perf,BR_PRED=19316
+    label@perf,INST_RETIRED=486554
+E/perf@perf: inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    inner class recall.
+    label@perf,CPU_CYCLES=186358
+E/perf@perf: label@perf,L1D_CACHE=74980
+    label@perf,L2D_CACHE=761
+    label@perf,LD_RETIRED=42572
+    label@perf,ST_RETIRED=9686
+    label@perf,BR_PRED=15476
+    label@perf,INST_RETIRED=170715
+I/Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build: Nondeterministic_AU_msm8937_64_LA.UM.5.5.R1__release_AU (I83a540a04a)
+    OpenGL ES Shader Compiler Version: XE031.09.00.04
+    Build Date: 09/18/17 Mon
+    Local Branch:
+    Remote Branch: quic/gfx-adreno.lnx.1.0.r5-rel
+    Local Patches: NONE
+    Reconstruct Branch: NOTHING
+I/OpenGLRenderer: Initialized EGL, version 1.4
+D/OpenGLRenderer: Swap behavior 1
+W/Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+W/IInputConnectionWrapper: reportFullscreenMode on inexistent InputConnection
