@@ -61,9 +61,10 @@ class myThread_produce (threading.Thread):
         """
 
         # reset adb log buffer.
-        os.system("adb logcat -c")
+        adb_path = os.path.join("E:\SDK", "platform-tools", "adb.exe")
+        os.system("%s logcat -c"%adb_path)
 
-        cmd1 = "adb logcat *:E"
+        cmd1 = "%s logcat *:E"%adb_path
         process = subprocess.Popen(cmd1, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         self.time = time.time()

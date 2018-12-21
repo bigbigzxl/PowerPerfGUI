@@ -7,7 +7,7 @@ import threading
 import time
 import numpy as np
 import Queue
-
+import platform
 class Filter_thread(threading.Thread):
     """
     继承父类threading.Thread
@@ -27,10 +27,48 @@ class Filter_thread(threading.Thread):
         threading.Thread.__init__(self)
         self.threadID = threadID
         self.name = name
+
+        self.__system = platform.system()
+        # 检查adb是否存在，与socket部分的adb版本保持一致
+        # 需要在系统变量里面添加ANDROID_HOME字段，并把sdk里面的 "platform-tools", "adb.exe"路径给添加进来。
+        # 我们也可以在代码里面临时加上该字段：
+        #          SDK_dir = "E:\SDK"
+        #          os.environ['ANDROID_HOME'] = SDK_dir
+        # 这样设置后，self.__check_adb()就能在系统路径下找到adb，
+        # 并把其作为执行者，这样所有使用adb的都是同一个就不会出现版本冲突问题了。
+        self.__command = ''
+        self.__check_adb()
+
+
         #传过来的是地址，因此这里直接用q形参或者self.q结果都是一样的，能实现全局操作。
         self.q = q_data
         self.max_queue_size = MAX_QUEUE_SIZE
         self.key_string = "label@perf"
+
+    def __check_adb(self):
+        """
+        检查adb
+        判断是否设置环境变量ANDROID_HOME
+        :return:
+        """
+        if "ANDROID_HOME" in os.environ:
+            if self.__system == "Windows":
+                path = os.path.join(os.environ["ANDROID_HOME"], "platform-tools", "adb.exe")
+                if os.path.exists(path):
+                    self.__command = path
+                else:
+                    raise EnvironmentError(
+                        "Adb not found in $ANDROID_HOME path: %s." % os.environ["ANDROID_HOME"])
+            else:
+                path = os.path.join(os.environ["ANDROID_HOME"], "platform-tools", "adb")
+                if os.path.exists(path):
+                    self.__command = path
+                else:
+                    raise EnvironmentError(
+                        "Adb not found in $ANDROID_HOME path: %s." % os.environ["ANDROID_HOME"])
+        else:
+            raise EnvironmentError(
+                "Adb not found in $ANDROID_HOME path: %s." % os.environ["ANDROID_HOME"])
 
     def run(self):
         #把要执行的代码写到run函数里面 线程在创建后会直接运行run函数
@@ -45,9 +83,9 @@ class Filter_thread(threading.Thread):
         """
 
         # reset adb log buffer.
-        os.system("adb logcat -c")
+        os.system("%s logcat -c" % self.__command)
 
-        cmd1 = "adb logcat *:E"
+        cmd1 = "%s logcat *:E" % self.__command
 
         process = subprocess.Popen(cmd1, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
@@ -81,7 +119,7 @@ class Filter_thread(threading.Thread):
             if "=" in data and len(data) > 1:
                 # 这里不能block的, 会影响性能。
                 self.q.put(data.replace(" ", ""), block=False, timeout=None)
-                print data
+                # print data
                 return
 
 

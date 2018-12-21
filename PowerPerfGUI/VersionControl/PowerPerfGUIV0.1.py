@@ -1,7 +1,7 @@
 # coding=utf-8
 from __future__ import unicode_literals
 
-from aqua.qsshelper import QSSHelper
+from pyqt4_proj.GITHUB.PowerPerfGUI.aqua.qsshelper import QSSHelper
 
 import sys,os
 import numpy as np
@@ -288,11 +288,11 @@ if __name__ == '__main__':
     global CURRENT_LINE
     CURRENT_LINE = set()
 
-    from filter import  Filter_thread
+    from pyqt4_proj.GITHUB.PowerPerfGUI.filter import  Filter_thread
     PowerPerfFilter = Filter_thread(threadID=0, name="Filter_thread unit_test", q_data=q_data)
     PowerPerfFilter.start()
 
-    from dispatch import  dispatch_thread
+    from pyqt4_proj.GITHUB.PowerPerfGUI.dispatch import  dispatch_thread
     PowerPerfDispatcher = dispatch_thread(threadID=1, name="dispatch_thread unit_test", q_data=q_data,
                                           dispatched_dict=DISPATCH_DICTS)
     PowerPerfDispatcher.start()

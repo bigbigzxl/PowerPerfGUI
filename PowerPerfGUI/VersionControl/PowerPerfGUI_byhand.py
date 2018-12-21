@@ -16,7 +16,7 @@ from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
 sys.path.append('../')
-from aqua.qsshelper import QSSHelper
+from pyqt4_proj.GITHUB.PowerPerfGUI.aqua.qsshelper import QSSHelper
 
 progname = os.path.basename(sys.argv[0])
 progversion = "0.1"
@@ -27,7 +27,7 @@ import sys  # provides interaction with the Python interpreter
 from PyQt4 import QtGui  # provides the graphic elements
 from PyQt4.QtCore import Qt  # provides Qt identifiers
 
-from aqua.qsshelper import QSSHelper
+from pyqt4_proj.GITHUB.PowerPerfGUI.aqua.qsshelper import QSSHelper
 import numpy as np
 import matplotlib
 matplotlib.use('Qt4Agg')

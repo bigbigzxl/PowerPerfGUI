@@ -2,13 +2,12 @@ import os
 import sys  # provides interaction with the Python interpreter
 
 from PyQt4 import QtGui  # provides the graphic elements
-from PyQt4.QtCore import Qt  # provides Qt identifiers
 
-from aqua.qsshelper import QSSHelper
-
+from pyqt4_proj.GITHUB.PowerPerfGUI.aqua.qsshelper import QSSHelper
 
 
-from PowerPerfMainWindow import Ui_MainWindow
+
+from pyqt4_proj.GITHUB.PowerPerfGUI.VersionControl.PowerPerfMainWindow import Ui_MainWindow
 
 class Window(Ui_MainWindow, QtGui.QMainWindow ):#
     def __init__(self, parent=None):

@@ -10,8 +10,10 @@ import matplotlib
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import numpy as np
+np.seterr(divide='ignore', invalid='ignore')
 from mpl_toolkits.axes_grid.anchored_artists import AnchoredText
 from mpl_toolkits.axes_grid1 import Grid
+from pmu_raw_events import PMU_RAW_EVENTS
 
 class dispatch_thread (threading.Thread):
 
@@ -21,60 +23,9 @@ class dispatch_thread (threading.Thread):
         self.name               = name
         self.q_data             = q_data
         self.dispatched_dict    = dispatched_dict
-        self.EventName          = ["SW_INCR",
-                                   "L1I_CACHE_REFILL",
-                                   "L1I_TLB_REFILL",
-                                   "L1D_CACHE_REFILL",       #
-                                   "L1D_CACHE",              #
-                                   "L1D_TLB_REFILL",         #
-                                   "LD_RETIRED",
-                                   "ST_RETIRED",
-                                   "INST_RETIRED",           #
-                                   "EXC_TAKEN",
-                                   "EXC_RETURN",
-                                   "CID_WRITE_RETIRED",
-                                   "PC_WRITE_RETIRED",
-                                   "BR_IMMED_RETIRED",
-                                   "BR_RETURN_RETIRED",
-                                   "UNALIGNED_LDST_RETIRED",
-                                   "BR_MIS_PRED",            #
-                                   "CPU_CYCLES",             #
-                                   "BR_PRED",
-                                   "MEM_ACCESS",
-                                   "L1I_CACHE",
-                                   "L1D_CACHE_WB",           #
-                                   "L2D_CACHE",              #
-                                   "L2D_CACHE_REFILL",       #
-                                   "L2D_CACHE_WB",           #
-                                   "BUS_ACCESS",
-                                   "MEMORY_ERROR",
-                                   "INST_SPEC",              #
-                                   "TTBR_WRITE_RETIRED",
-                                   "BUS_CYCLES",
-                                   "CHAIN",
-                                   "L1D_CACHE_ALLOCATE",     #
-                                   # A53 support end.
-                                   "L2D_CACHE_ALLOCATE",     #
-                                   "BR_RETIRED",
-                                   "BR_MIS_PRED_RETIRED",
-                                   "STALL_FRONTEND",
-                                   "STALL_BACKEND",
-                                   "L1D_TLB",
-                                   "L1I_TLB",
-                                   "L2I_CACHE",
-                                   "L2I_CACHE_REFILL",
-                                   "L3D_CACHE_ALLOCATE",
-                                   "L3D_CACHE_REFILL",
-                                   "L3D_CACHE",
-                                   "L3D_CACHE_WB",
-                                   "L2D_TLB_REFILL",
-                                   "L2I_TLB_REFILL",
-                                   "L2D_TLB",
-                                   "L2I_TLB",
-                                   "RAW_EVENT_SIZE"
-                                   ]
         self.max_line_length    = MAX_LINE_LENGTH
         self.savefile           = SAVEFILE
+
     def run(self):
         self.dispatch_data()
 
@@ -97,7 +48,7 @@ class dispatch_thread (threading.Thread):
     def dispatch_2_dict(self, line):
         event_name, event_value = line.split("=")
         # 假如数据不是标准的RAW Event的话， 返回。
-        if event_name not in self.EventName:
+        if event_name not in PMU_RAW_EVENTS.EventName:
             return
         else:
             # 有则返回字典，没有则返回None；
@@ -107,9 +58,16 @@ class dispatch_thread (threading.Thread):
                     self.dispatched_dict[event_name]["Line_Y"].pop(0)
             else:
                 # 没有字典还，那么我就的给你创造一个身体，为了升级你的“身体”，今后可以选择把下面的做成模板，统一升级，暂时小工程还用不到。
-                self.dispatched_dict[event_name] = {"Line_Y": [], "NEW_DATA": False, "Line": None}
+                self.dispatched_dict[event_name] = {"Line_Y": [], "NEW_DATA": False, "Line": None, "Boost": 0.0}
 
             self.dispatched_dict[event_name]["Line_Y"].append(float(event_value))
+
+            Div = np.divide(np.max( self.dispatched_dict[event_name]["Line_Y"]), np.min( self.dispatched_dict[event_name]["Line_Y"]))
+            # mean = np.mean( self.dispatched_dict[event_name]["Line_Y"])
+            Boost = (Div - 1.0) * 100.0  #performence 提升的大小；
+
+            self.dispatched_dict[event_name]["Boost"] = Boost
+
             self.dispatched_dict[event_name]["NEW_DATA"] = True
 
     def SAVEdatas(self, line):
@@ -132,7 +90,8 @@ class dispatch_thread (threading.Thread):
 
 if __name__ == "__main__":
 
-
+    SDK_dir = "E:\SDK"
+    os.environ['ANDROID_HOME'] = SDK_dir
     from filter import Filter_thread
 
     if (sys.version_info > (3, 0)):
